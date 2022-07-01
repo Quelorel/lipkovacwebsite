@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-section-background {
+    width: 100%;
+    height: 100%;
+    background: url("alexander.jpeg");
+    background-size: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    
+}
+
+.hero-section-background::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top:0;
+    left:0;
+    background-color: black;
+    opacity: 0.3;   
+}
+
+.logo {
+    font-size: 36px;
+    position: relative;
+    color: rgb(241, 238, 238);
+}
+
+nav {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta,.cta-2 {
+	cursor: pointer;
+	padding: 18px 50px;
+	display: inline-block;
+    position: relative;
+    border: transparent solid 3px;
+    border-radius: 50rem;
+    background: linear-gradient(#171717, #0e0d0d),
+    linear-gradient(26deg, rgba(3,229,255,1) 0%, rgba(132,128,255,1) 50%, rgba(225,32,255,1) 100%)
+      no-repeat center center;
+    background-clip: 
+    padding-box, 
+    border-box;
+    background-size:
+    100% 100%, 
+    110% 150%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    opacity: 0.;
+
+}
+
+.cta-2 {
+    position: absolute;
+    top: 68%;
+    left:14%;
+    background: linear-gradient(#121213, #121213),
+    linear-gradient(26deg, rgba(3,229,255,1) 0%, rgba(132,128,255,1) 50%, )
+}
+
+h1 {
+    color: #ebe6e6d3;
+    position: absolute;
+    top: 30%;
+    left:14%;
+    font-size: 110px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+    
+}
+
+
+.white {
+    color: white;
+}
+
+h1 span {
+    padding: 8px 20px 00px 20px;
+    background-color: #ebe6e6c0;
+    color: black;
+  
+}
+
+
+.linked-in {
+    position: absolute;
+    right:20px;
+    bottom: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
